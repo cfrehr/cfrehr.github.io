@@ -1,6 +1,6 @@
 (function() {
     var parallax = document.querySelectorAll(".parallax"),
-        speed = 0.62;
+        speed = 0.60;
     
     window.onscroll = function() {
         [].slice.call(parallax).forEach(function(el,i) {
