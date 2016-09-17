@@ -77,4 +77,4 @@
     };
 
     calculateRatios();
-})();
+});
