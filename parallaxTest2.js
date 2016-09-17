@@ -1,7 +1,8 @@
 (function() {
     
     var parallax = document.querySelectorAll(".parallax"),
-      backgroundImageHeight = 2080,
+      // Actual backgroundImageHeight = 2100; adjusted to eliminate small margin being added at end of image.
+      backgroundImageHeight = 2070,
       backgroundImageWidth = 1366,
       inversebgRatio = backgroundImageHeight / backgroundImageWidth,
       bgRatio = backgroundImageWidth / backgroundImageHeight,
