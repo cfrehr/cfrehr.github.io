@@ -1,7 +1,7 @@
 (function() {
     
     var parallax = document.querySelectorAll(".parallax"),
-      backgroundImageHeight = 2100,
+      backgroundImageHeight = 2090,
       backgroundImageWidth = 1366,
       inversebgRatio = backgroundImageHeight / backgroundImageWidth,
       bgRatio = backgroundImageWidth / backgroundImageHeight,
@@ -60,7 +60,7 @@
             
             // Find and set background position.
             var elBackgrounPos = "50%" + limitedShiftAmount + "px";
-            el.style.backgroundPosition = elBackgrounPos - 1;
+            el.style.backgroundPosition = elBackgrounPos;
         });
     }
   
