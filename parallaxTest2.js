@@ -12,8 +12,8 @@
       windowHeight,
       windowWidth,
       scrollPercentage;
-        
-  
+    
+    // Find the viewport's height and width
     calculateRatios = function() {
       windowHeight = document.documentElement.clientHeight;
       windowWidth = document.documentElement.clientWidth;
@@ -29,6 +29,9 @@
       //                http://stackoverflow.com/questions/1145850/how-to-get-height-of-entire-document-with-javascript
       docHeight = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
       
+      // Find the vertical distance that the viewport will have to shift.
+      // Multiply inversebgRatio by windowWidth to get total scroll length of window/viewport. Then subtract windowHeight 
+      //    to get the total remaining distance that the viewport will have to scroll.
       maxShiftDistance = (windowWidth * inversebgRatio) - windowHeight;
       
       console.log('Max shift:' +  maxShiftDistance);
@@ -37,13 +40,21 @@
     calculateBGPosition = function() {
         [].slice.call(parallax).forEach(function(el,i) {
           
+          // gets the number of pixels the window has been vertically scrolled
           var windowYOffset = window.pageYOffset;
+          
+          // (docHeight - windowHeight) is total amount of pixels that can be scrolled.
+          // windowYoffset / (docHeight - windowHeight) is the proportion of available scrolling that has been performed.
           scrollProportion = windowYOffset / (docHeight - windowHeight);
           
           var limitedShiftAmount;
           
+          // If windowRatio (aspect ratio; width/height) is bigger than background bgRatio,
+          // then the entire image is not contained in the window and there is scrolling to be performed.
           if (windowRatio > bgRatio) {
             limitedShiftAmount = windowYOffset - (scrollProportion * maxShiftDistance);
+          
+          // Else, the entire image is contained in the window and no scrolling is necessary.
           } else {
             limitedShiftAmount = windowYOffset;
           }
