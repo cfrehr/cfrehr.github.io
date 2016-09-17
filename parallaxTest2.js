@@ -57,6 +57,8 @@
           } else {
             limitedShiftAmount = windowYOffset;
           }
+            // NEW: Round limitedShiftAmount;
+            limitedShiftAmount = limitedShiftAmount.toFixed(2);
             
             // Find and set background position.
             var elBackgrounPos = "50%" + limitedShiftAmount + "px";
