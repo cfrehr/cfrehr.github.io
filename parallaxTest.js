@@ -1,6 +1,5 @@
 (function() {
     var parallax = document.querySelectorAll(".parallax"),
-    var width = window.outerWidth,
         speed = 0.65;
     
     window.onscroll = function() {
