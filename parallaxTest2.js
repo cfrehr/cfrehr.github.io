@@ -58,19 +58,20 @@
           } else {
             limitedShiftAmount = windowYOffset;
           }
-          // var desiredShiftAmount = windowYOffset * speed;
-
-            var elBackgrounPos = "50% " + limitedShiftAmount + "px";
- 
+            
+            // Find and set background position.
+            var elBackgrounPos = "75% " + limitedShiftAmount + "px";
             el.style.backgroundPosition = elBackgrounPos;
         });
     }
   
+    // On every window resize, recalulate ratios and background position.
     window.onresize = function(event) {
       calculateRatios();
       calculateBGPosition();
     };
-  
+    
+    // On every scroll, recalculate the background position.
     window.onscroll = function() {
       calculateBGPosition();
     };
