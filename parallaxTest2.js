@@ -1,7 +1,7 @@
 (function() {
     
     var parallax = document.querySelectorAll(".parallax"),
-      backgroundImageHeight = 2090,
+      backgroundImageHeight = 2080,
       backgroundImageWidth = 1366,
       inversebgRatio = backgroundImageHeight / backgroundImageWidth,
       bgRatio = backgroundImageWidth / backgroundImageHeight,
