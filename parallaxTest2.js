@@ -59,7 +59,7 @@
           }
             
             // Find and set background position.
-            var elBackgrounPos = "10%" + limitedShiftAmount + "px";
+            var elBackgrounPos = "50%" + limitedShiftAmount + "px" - 50 + "px";
             el.style.backgroundPosition = elBackgrounPos;
         });
     }
