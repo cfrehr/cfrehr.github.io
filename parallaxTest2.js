@@ -1,7 +1,7 @@
 (function() {
     
     var parallax = document.querySelectorAll(".parallax"),
-      speed = 1.880,
+      speed = 1.90,
       backgroundImageHeight = 2100,
       backgroundImageWidth = 1366,
       inversebgRatio = backgroundImageHeight / backgroundImageWidth,
