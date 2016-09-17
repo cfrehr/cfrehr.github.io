@@ -1,7 +1,7 @@
 (function() {
-    var speedTest = 0.580;
+    var width = window.outerWidth;
     var parallax = document.querySelectorAll(".parallax"),
-        speed = speedTest;
+        speed = (-0.0003646 * (width - 1440)) + 0.580;
     
     window.onscroll = function() {
         [].slice.call(parallax).forEach(function(el,i) {
