@@ -51,8 +51,6 @@
 			height: 100vh;
 			overflow-x: hidden;
 			overflow-y: auto;
-			background-image: url("http://i.imgur.com/j5uZCVe.jpg");
-			background-size: cover;
 		}
 		.parallax__layer {
 			position: absolute;
@@ -63,6 +61,11 @@
 		}
 		.parallax__layer--content {
 			transform: translateZ(-1px) scale(2);
+		}
+		.parallax__layer--background {
+			background-image: url("http://i.imgur.com/j5uZCVe.jpg");
+			background-size: cover;
+			transform: translateZ(-2px) scale(3);
 		}
 		</style>
 	</head>
@@ -85,7 +88,10 @@
 				 </div>
 			</nav>	
 		</div>
-		<div class="parallax parallax-1">	
+		<div class="parallax parallax-1">
+			<div class="parallax__layer parallax__layer--background">
+				
+			</div>	
 			<div class="parallax__layer parallax__layer--content">
 				<h2>Lorem ipsum!</h2>
 			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
