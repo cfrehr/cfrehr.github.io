@@ -72,7 +72,7 @@
     
     // On every scroll, recalculate the background position.
     window.onscroll = function() {
-      calculateBGPosition();
+      window.requestAnimationFrame(calculateBGPosition);
     };
 
     calculateRatios();
