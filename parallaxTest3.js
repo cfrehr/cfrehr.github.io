@@ -66,8 +66,8 @@
   
     // On every window resize, recalulate ratios and background position.
     window.onresize = function(event) {
-      calculateRatios();
-      calculateBGPosition();
+      window.requestAnimationFrame(calculateRatios);
+      window.requestAnimationFrame(calculateBGPosition);
     };
     
     // On every scroll, recalculate the background position.
