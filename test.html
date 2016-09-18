@@ -99,15 +99,17 @@
 			}
 		}
 		.about-photo {
-			background-image: url("http://i.imgur.com/Aut0mWx.jpg");
-			background-size: cover;
 			height: 400px;
-			padding: 50px;
+			padding: 20px;
 			border-color: black;
 			border-style: solid;
 			border-width: 2px;
 			border-radius: 50px;
-
+		}
+		.photo {
+			background-image: url("http://i.imgur.com/Aut0mWx.jpg");
+			background-size: cover;
+			border-radius: 50px;
 		}
 		.about-blurb {
 			background-color: #ffffff;
@@ -138,6 +140,8 @@
 			<div class="container-fluid parallax-container">
 				<div class="row about-row">
 					<div class="col-md-3 col-md-offset-1 text-center about-photo">
+						<div class="container photo">
+						</div>
 					</div>
 					<div class="col-md-5 col-md-offset-2 about-blurb">
 						<p>Hi, this is a little blurb about me!</p>
