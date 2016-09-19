@@ -93,21 +93,15 @@
 				font-size: 160px;
 			}
 		}
+
+
+		/* ABOUT ---------------------------------------------- */
 		.about-row {
 			margin-left: 10%;
 			margin-right: 10%;
 			background-color: #ffffff;
 			border-radius: 40px;
-		}
-		.interests-row {
-			margin-top: 200px;
-			margin-left: 10%;
-			margin-right: 10%;
-			border-radius: 20px;
-			background-color: #ffffff;
-		}
-		/* NOTE: Tried sizing both the containers .about-row and .about-photo, but inconsistent across resolutions.
-		Instead, specify the max image height/width, and let the containers inherit the properties from image! */
+		}		
 		.about-photo {
 			padding: 25px;
 		}
@@ -123,10 +117,23 @@
 			margin-top: 0;
 			margin-bottom: 20px;
 		}
-		.interests-row img {
-			max-height: 100%;
-			max-width: 100%;
-			border-radius: 15%;
+		
+		
+		/* INTERESTS ---------------------------------------------- */
+		.interests-container {
+			margin-top: 200px;
+			margin-left: 10%;
+			margin-right: 10%;
+			border-radius: 40px;
+			background-color: #ffffff;
+		}
+		.interests-headers {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		.interests-headers img {
+			max-height: 30px;
+			background-size: cover;
 		}
 
 
@@ -172,13 +179,27 @@
 						</div>
 					</div>
 				</div>
-				<!---------- BACKGROUND ROW ---------->
-				<div class="row interests-row">
-					<div class="col-md-4 interests-photo">
-						<img src="http://i.imgur.com/Aut0mWx.jpg">
+				<!---------- INTERESTS ROWS ---------->
+				<div class="container interests-container">	
+					<div class="row interests-headers">
+						<div class="col-md-4">
+							<div class="container-fluid data-collection">
+								<img src="http://i.imgur.com/86K14vB.jpg">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<<div class="container-fluid predictive-analytics">
+								Predictive Analytics
+							</div>
+						</div>
+						<div class="col-md-4">
+							<<div class="container-fluid automation">
+								Automation
+							</div>
+						</div>
 					</div>
-					<div class="col-md-5 col-md-offset-2 interests-blurb">
-						<p>Hi, this is a little blurb about me!</p>
+					<div class="row interests-row">
+						
 					</div>
 				</div>
 			</div>
