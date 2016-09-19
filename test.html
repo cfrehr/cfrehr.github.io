@@ -108,16 +108,19 @@
 		}
 		/* NOTE: Tried sizing both the containers .about-row and .about-photo, but inconsistent across resolutions.
 		Instead, specify the max image height/width, and let the containers inherit the properties from image! */
-		.about-row img {
+		.about-photo {
+			padding: 25px;
+		}
+		.about-photo img {
 			max-height: 100%;
 			max-width: 100%;
 			border-radius: 20%;
 		}
-		.about-container {
+		.about-blurb {
 			padding: 25px;
 		}
-		.about-container h2 {
-			margin-top: 5%;
+		.about-blurb h2 {
+			margin-top: 0;
 		}
 		.interests-row img {
 			max-height: 100%;
@@ -154,11 +157,13 @@
 			<div class="container-fluid parallax-container">
 				<!---------- ABOUT ROW ---------->
 				<div class="row about-row">
-					<div class="col-md-4 about-photo">
-						<img src="http://i.imgur.com/Aut0mWx.jpg">
+					<div class="col-md-4">
+						<div class="container-fluid about-photo">
+							<img src="http://i.imgur.com/Aut0mWx.jpg">
+						</div>
 					</div>
-					<div class="col-md-5 col-md-offset-2 about-blurb">
-						<div class="container-fluid about-container">
+					<div class="col-md-5 col-md-offset-2">
+						<div class="container-fluid about-blurb">
 							<h2>About Me</h2>
 							<p>I am a recent industrial engineering graduate from the University of Wisconsin-Madison who is seeking a data-driven role in the analytics industry.</p>
 							<p>I enjoy blending statistical analysis with machine learning and optimization techniques to justify decision making and improve business operations. </p>
