@@ -98,21 +98,33 @@
 				font-size: 160px;
 			}
 		}
-
 		.about-row {
 			margin-left: 10%;
 			margin-right: 10%;
 			background-color: #ffffff;
 			border-radius: 40px;
 		}
+		.interests-row {
+			margin-left: 10%;
+			margin-right: 10%;
+			border-radius: 20px;
+			background-color: #ffffff;
+		}
 		/* NOTE: Tried sizing both the containers .about-row and .about-photo, but inconsistent across resolutions.
 		Instead, specify the max image height/width, and let the containers inherit the properties from image! */
-		img {
+		.about-photo {
 			padding: 10%;
 			padding-top: 10%;
 			max-height: 100%;
 			max-width: 100%;
 			border-radius: 20%;
+		}
+		.background-photo {
+			padding: 10%;
+			padding-top: 10%;
+			max-height: 100%;
+			max-width: 100%;
+			border-radius: 10%;
 		}
 
 		</style>
@@ -144,13 +156,21 @@
 				<!---------- ABOUT ROW ---------->
 				<div class="row about-row">
 					<div class="col-md-4 about-photo">
-						<img src="http://i.imgur.com/Aut0mWx.jpg">
+						<img class="about-photo" src="http://i.imgur.com/Aut0mWx.jpg">
 					</div>
 					<div class="col-md-5 col-md-offset-2 about-blurb">
 						<p>Hi, this is a little blurb about me!</p>
 					</div>
 				</div>
 				<!---------- BACKGROUND ROW ---------->
+				<div class="row interests-row">
+					<div class="col-md-4 about-photo">
+						<img src="http://i.imgur.com/Aut0mWx.jpg">
+					</div>
+					<div class="col-md-5 col-md-offset-2 about-blurb">
+						<p>Hi, this is a little blurb about me!</p>
+					</div>
+				</div>
 			</div>
 			<div class="container">
 			        <h2>Lorem ipsum!</h2>
