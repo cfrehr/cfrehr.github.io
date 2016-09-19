@@ -13,6 +13,10 @@
 			max-width: 1200px;
 			margin: 0 auto;
 		}
+		
+		
+/* NAVBAR -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
 		nav {
 			margin-top: 20px;
 			background-color: black;
@@ -47,6 +51,9 @@
 			text-decoration: none;
 		}
 		
+		
+/* PARALLAX ------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------- */
 		div.module: last-child {
 			/*margin-bottom: 0;*/
 		}
@@ -95,13 +102,26 @@
 		}
 
 
-		/* ABOUT ---------------------------------------------- */
+/* ABOUT --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
 		.about-row {
 			margin-left: 10%;
 			margin-right: 10%;
 			background-color: #ffffff;
 			border-radius: 40px;
-		}		
+		}
+		.about-title {
+			margin-left: 0;
+			margin-right: 0;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-bottom-color: #000000;
+		}
+		.about-title h2 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
 		.about-photo {
 			padding: 25px;
 		}
@@ -113,13 +133,14 @@
 		.about-blurb {
 			padding: 25px;
 		}
-		.about-blurb h2, p {
+		.about-blurb p {
 			margin-top: 0;
 			margin-bottom: 20px;
 		}
 		
 		
-		/* INTERESTS ---------------------------------------------- */
+/* INTERESTS ----------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
 		.interests-container {
 			margin-top: 200px;
 			margin-left: 10%;
@@ -178,7 +199,8 @@
 		</style>
 	</head>
 	<body>
-		<!---------- NAVIGATION BAR ---------->
+		
+<!-- NAVBAR ----------------------------------------------------------------------------------------------->
 		<div class="nav-container">
 			<nav class="container-fluid">
 				<div class="row">
@@ -197,27 +219,32 @@
 				 </div>
 			</nav>	
 		</div>
-		<!---------- PARALAX ---------->
+		
+<!-- PARALAX ---------------------------------------------------------------------------------------------->
 		<div class="module parallax parallax-1">
-			<!---------- MAIN CONTAINER ---------->
 			<div class="container-fluid parallax-container">
-				<!---------- ABOUT ROW ---------->
-				<div class="row about-row">
-					<div class="col-md-4">
-						<div class="container-fluid about-photo">
-							<img src="http://i.imgur.com/Aut0mWx.jpg">
-						</div>
+				
+<!-- ABOUT ------------------------------------------------------------------------------------------------>
+				<div class="container-fluid about-container">
+					<div class="row about-title">
+						<h2>About</h2>
 					</div>
-					<div class="col-md-6 col-md-offset-1">
-						<div class="container-fluid about-blurb">
-							<h2>About Me</h2>
-							<p>I am a recent industrial engineering graduate from the University of Wisconsin-Madison who is seeking a data-driven role in the analytics industry.</p>
-							<p>I enjoy blending statistical analysis with machine learning and optimization techniques to justify decision making and improve business operations. </p>
-					
+					<div class="row about-row">
+						<div class="col-md-4">
+							<div class="container-fluid about-photo">
+								<img src="http://i.imgur.com/Aut0mWx.jpg">
+							</div>
 						</div>
-					</div>
+						<div class="col-md-6 col-md-offset-1">
+							<div class="container-fluid about-blurb">
+								<p>I am a recent industrial engineering graduate from the University of Wisconsin-Madison who is seeking a data-driven role in the analytics industry.</p>
+								<p>I enjoy blending statistical analysis with machine learning and optimization techniques to justify decision making and improve business operations. </p>
+							</div>
+						</div>
+					</div>	
 				</div>
-				<!---------- INTERESTS ROWS ---------->
+
+<!-- INTERESTS -------------------------------------------------------------------------------------------->
 				<div class="container-fluid interests-container">
 					<div class="row interests-title">
 						<h2>Interests</h2>
