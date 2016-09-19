@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TEST</title>
+		<!-- link to main stylesheet -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+		<style>
+		body {
+			margin: 0;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		nav {
+			margin-top: 20px;
+			background-color: black;
+			position: absolute;
+			width: 100%;
+			opacity: 0.5;
+			height: 70px;
+		}
+		.icons {
+			padding-top: 20px;
+		}
+		i {
+			padding-left:10px;
+			font-size: 25px !important;
+		}
+		.icon-column {
+			margin-right: 10px;
+		}
+		.icon-column a {
+			color: #ffffff;
+			
+		}
+		.icon-column a:hover {
+			font-size: 27px;
+			text-decoration: none;
+		}
+		.page-column a {
+			color: #ffffff;
+		}
+		.page-column a:hover {
+			font-size: 33px;
+			text-decoration: none;
+		}
+		
+		div.module: last-child {
+			margin-bottom: 0;
+		}
+		div.module h2 {
+			margin-bottom: 40px;
+			font-family: "Roboto Slab", serif;
+			font-size: 30px;
+		}
+		div.module p {
+			margin-bottom: 40px;
+			font-size: 16px;
+			font-weight: 300;
+		}
+		div.module p:last-child {
+			margin-bottom: 0;
+		}
+		div.module.content {
+			padding: 40px 0;
+		}
+		div.module.parallax {
+			color: #1e1e1e;
+			font-size: 48px;
+			line-height: 1;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			text-shadow: 0 0 10px white;
+		}
+		div.module.parallax-1 {
+			background-image: url("http://i.imgur.com/j5uZCVe.jpg");
+			background-size: contain;
+		}
+		@media all and (min-width: 600px) {
+			div.module h2 {
+				font-size: 42px;
+			}
+			div.module p {
+				font-size: 20px;
+			}
+			div.module.parallax {
+				padding: 250px 0;
+			}
+			div.module.parallax h1 {
+				font-size: 96px;
+			}
+		}
+		@media all and (min-width: 960px) {
+			div.module.parallax h1 {
+				font-size: 160px;
+			}
+		}
+
+		.about-row {
+			margin-left: 10%;
+			margin-right: 10%;
+			background-color: #ffffff;
+			border-radius: 40px;
+		}
+		/* NOTE: Tried sizing both the containers .about-row and .about-photo, but inconsistent across resolutions.
+		Instead, specify the max image height/width, and let the containers inherit the properties from image! */
+		img {
+			padding: 10%;
+			padding-top: 10%;
+			max-height: 100%;
+			max-width: 100%;
+			border-radius: 20%;
+		}
+
+		</style>
+	</head>
+	<body>
+		<!---------- NAVIGATION BAR ---------->
+		<div class="nav-container">
+			<nav class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3 icons">
+							<div class="col-md-2 icon-column"><a href="mailto:cfrehr@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+							<div class="col-md-2 icon-column"><a href="http://www.linkedin.com/in/codyfrehr"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+							<div class="col-md-2 icon-column"><a href="http://www.github.com/cfrehr"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+						</div>
+						<div class="col-md-9 pages">
+							<div class="col-md-3 text-center page-column"><h2><a href="about.html">About</a></h2></div>
+							<div class="col-md-3 text-center page-column"><h2><a href="projects.html">Projects</a></h2></div>
+							<div class="col-md-3 text-center page-column"><h2><a href="test.html">TEST</a></h2></div>
+						</div>
+				 	</div>
+				 </div>
+			</nav>	
+		</div>
+		<!---------- PARALAX ---------->
+		<div class="module parallax parallax-1">
+			<!---------- MAIN CONTAINER ---------->
+			<div class="container-fluid parallax-container">
+				<!---------- ABOUT ROW ---------->
+				<div class="row about-row">
+					<div class="col-md-4 about-photo">
+						<img src="http://i.imgur.com/Aut0mWx.jpg">
+					</div>
+					<div class="col-md-5 col-md-offset-2 about-blurb">
+						<p>Hi, this is a little blurb about me!</p>
+					</div>
+				</div>
+				<!---------- BACKGROUND ROW ---------->
+			</div>
+			<div class="container">
+			        <h2>Lorem ipsum!</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+			    	<h2>Lorem ipsum! (2)</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+			    	<h2>Lorem ipsum! (3) </h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+			    	<h2>Lorem ipsum! (4) </h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+			    	<h2>Lorem ipsum! (5)</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam in repudiandae architecto placeat, illum atque quasi explicabo, culpa, molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut quaerat, quasi iste voluptate et dolorem atque sed neque voluptates, molestias dolor enim!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam, molestias nesciunt modi, at debitis maxime sunt et quo quas labore perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam excepturi corporis!</p>
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius harum atque unde nihil aut quam provident sunt, iste error vitae suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae impedit officia quis odit rerum sequi, explicabo commodi illum suscipit, tempore eum doloremque quae obcaecati tempora quidem neque sapiente modi?</p>
+			</div>
+		</div>
+		<script src="parallaxTest2.js"></script>
+	</body>
+</html>
+
