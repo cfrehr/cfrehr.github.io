@@ -322,10 +322,34 @@
 			margin-bottom: 0;
 		}
 		.industrial-engineering {
+			background-color: #FFCC00;
+			float: left;
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			color: #FFFFFF;
+			text-align: center;
+			vertical-align: middle;
+			position: relative;
 		}
-		.shared {
+		.computer-science::before {
+			content: "Linear Programming";
+			position: absolute;
+			left: 20px;
+			top: 50px;
 		}
 		.computer-science {
+			background-color: 
+			rgba(255,0,0,0.5); 
+			margin-left: -70px;
+			float: left;
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			color: #FFFFFF;
+			text-align: center;
+			vertical-align: middle;
+			position: relative;
 		}
 
 
@@ -491,7 +515,7 @@
 						<h2>Education</h2>
 					</div>	
 					<div class="row education-row">
-						<div class="col-md-3 university">
+						<div class="col-md-4 university">
 							<div class="container-fluid university-container">
 								<div class="logo">
 									<img class="center" src="http://i.imgur.com/uvrKgpZ.png">
@@ -503,8 +527,8 @@
 								
 							</div>
 						</div>
-						<div class="col-md-3 industrial-engineering">
-							<div class="container-fluid industrial-engineering-container">
+						<div class="col-md-8 venn-diagram-container">
+							<div class="industrial-engineering">
 								<h3>Industrial Engr.</h3>
 								<p>Applied Stats I, II</p>
 								<p>Theory of Probability</p>
@@ -513,16 +537,7 @@
 								<p>Experimental Design</p>
 								<p>Machine Learning</p>
 							</div>
-						</div>
-						<div class="col-md-3 shared">
-							<div class="container-fluid shared-container">
-								<h3>Both</h3>
-								<p>Advanced Linear Programming</p>
-								<p>Advanced Optimization Modeling</p>
-							</div>
-						</div>
-						<div class="col-md-3 computer-science">
-							<div class="container-fluid computer-science-container">
+							<div class="computer-science">
 								<h3>Computer Science</h3>
 								<p>Problem Solving in Matlab</p>
 								<p>Data Structures</p>
