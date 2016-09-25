@@ -21,10 +21,10 @@
                     //Change image at regular intervals
       setInterval(function(){   
        image.fadeOut(0, function () {
-       image.css('background-image', 'url(banner/timeplot' + images[i++] +')');
+       image.css('background-image', 'url(' + images[i++] +')');
        image.fadeIn(0);
        });
-       if(i == 67)
+       if(i == images.length)
         i = 0;
       }, 16);            
       });
