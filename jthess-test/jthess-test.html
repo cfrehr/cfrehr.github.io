@@ -13,10 +13,10 @@
 
       $(window).load(function() {           
       var i =113; 
-      var images = ['banner/timeplot113.jpg','banner/timeplot114.jpg','banner/timeplot114.jpg','banner/timeplot115.jpg','banner/timeplot116.jpg','banner/timeplot117.jpg','banner/timeplot118.jpg','banner/timeplot119.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg'];
+      //var images = ['banner/timeplot113.jpg','banner/timeplot114.jpg','banner/timeplot114.jpg','banner/timeplot115.jpg','banner/timeplot116.jpg','banner/timeplot117.jpg','banner/timeplot118.jpg','banner/timeplot119.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg'];
       var image = $('#slideit');
                     //Initial Background image setup
-      image.css('background-image', 'url(timeplot1.jpg)');
+      image.css('background-image', 'url(banner/timeplot113.jpg)');
       
                     //Change image at regular intervals
       setInterval(function(){   
@@ -24,8 +24,8 @@
        image.css('background-image', 'url(banner/timeplot' + i++ +'.jpg)');
        image.fadeIn(0);
        });
-       if(i == images.length)
-        i = 0;
+       if(i == 180)
+        i = 113;
       }, 16);            
       });
     </script>
