@@ -12,8 +12,8 @@
     <script type="text/javascript">
 
       $(window).load(function() {           
-      var i =113; 
-      //var images = ['banner/timeplot113.jpg','banner/timeplot114.jpg','banner/timeplot114.jpg','banner/timeplot115.jpg','banner/timeplot116.jpg','banner/timeplot117.jpg','banner/timeplot118.jpg','banner/timeplot119.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg','banner/timeplot113.jpg'];
+      var i =0; 
+      var images = ['banner/timeplot113.jpg','banner/timeplot114.jpg','banner/timeplot115.jpg','banner/timeplot116.jpg','banner/timeplot117.jpg','banner/timeplot118.jpg','banner/timeplot119.jpg','banner/timeplot120.jpg','banner/timeplot121.jpg','banner/timeplot122.jpg','banner/timeplot123.jpg','banner/timeplot124.jpg','banner/timeplot125.jpg','banner/timeplot126.jpg','banner/timeplot127.jpg','banner/timeplot128.jpg','banner/timeplot129.jpg','banner/timeplot130.jpg','banner/timeplot131.jpg','banner/timeplot132.jpg','banner/timeplot133.jpg','banner/timeplot134.jpg','banner/timeplot135.jpg','banner/timeplot136.jpg','banner/timeplot137.jpg','banner/timeplot138.jpg','banner/timeplot139.jpg','banner/timeplot140.jpg','banner/timeplot141.jpg','banner/timeplot142.jpg','banner/timeplot143.jpg','banner/timeplot144.jpg','banner/timeplot145.jpg','banner/timeplot146.jpg','banner/timeplot147.jpg','banner/timeplot148.jpg','banner/timeplot149.jpg','banner/timeplot150.jpg','banner/timeplot151.jpg','banner/timeplot152.jpg','banner/timeplot153.jpg','banner/timeplot154.jpg','banner/timeplot155.jpg','banner/timeplot156.jpg','banner/timeplot157.jpg','banner/timeplot158.jpg','banner/timeplot159.jpg','banner/timeplot160.jpg','banner/timeplot161.jpg','banner/timeplot162.jpg','banner/timeplot163.jpg','banner/timeplot164.jpg','banner/timeplot165.jpg','banner/timeplot166.jpg','banner/timeplot167.jpg','banner/timeplot168.jpg','banner/timeplot169.jpg','banner/timeplot170.jpg','banner/timeplot171.jpg','banner/timeplot172.jpg','banner/timeplot173.jpg','banner/timeplot174.jpg','banner/timeplot175.jpg','banner/timeplot176.jpg','banner/timeplot177.jpg','banner/timeplot178.jpg','banner/timeplot179.jpg', 'banner/timeplot180.jpg'];
       var image = $('#slideit');
                     //Initial Background image setup
       image.css('background-image', 'url(banner/timeplot113.JPG)');
@@ -21,11 +21,11 @@
                     //Change image at regular intervals
       setInterval(function(){   
        image.fadeOut(0, function () {
-       image.css('background-image', 'url(banner/timeplot' + i++ +'.JPG)');
+       image.css('background-image', 'url(banner/timeplot' + images[i++] +'.JPG)');
        image.fadeIn(0);
        });
-       if(i == 180)
-        i = 113;
+       if(i == 67)
+        i = 0;
       }, 16);            
       });
     </script>
