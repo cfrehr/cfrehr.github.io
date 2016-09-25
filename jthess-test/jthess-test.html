@@ -19,13 +19,13 @@
       image.css('background-image', 'url(banner/timeplot113.JPG)');
       
                     //Change image at regular intervals
-      setInterval(function(){   
+      var intervalID = setInterval(function(){   
        image.fadeOut(0, function () {
        image.css('background-image', 'url(' + images[i++] +')');
        image.fadeIn(0);
        });
        if(i == images.length)
-        i = 0;
+        clearInterval(intervalID);
       }, 16);            
       });
     </script>
