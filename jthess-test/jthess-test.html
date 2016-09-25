@@ -36,9 +36,9 @@
       image.css('background-image', 'url(timeplot1.jpg)');
                     //Change image at regular intervals
       setInterval(function(){   
-       image.fadeOut(500, function () {
+       image.fadeOut(0, function () {
        image.css('background-image', 'url(' + images [i++] +')');
-       image.fadeIn(500);
+       image.fadeIn(0);
        });
        if(i == images.length)
         i = 0;
