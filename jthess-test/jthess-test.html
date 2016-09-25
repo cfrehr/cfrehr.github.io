@@ -10,12 +10,14 @@
     <!-- http://www.programming-free.com/2013/12/change-background-image-jquery.html -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script type="text/javascript">
+      var image = $('#slideit');
+                    //Initial Background image setup
+      image.css('background-image', 'url(timeplot1.jpg)');
+      
       $(window).load(function() {           
       var i =0; 
       var images = ['timeplot2.jpg','timeplot1.jpg'];
-      var image = $('#slideit');
-                    //Initial Background image setup
-      //image.css('background-image', 'url(timeplot1.jpg)');
+      
                     //Change image at regular intervals
       setInterval(function(){   
        image.fadeOut(0, function () {
