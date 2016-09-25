@@ -15,11 +15,11 @@
       var images = ['timeplot2.jpg','timeplot1.jpg'];
       var image = $('#slideit');
                     //Initial Background image setup
-      image.css('background-image', 'url(timeplot1.jpg)');
+      //image.css('background-image', 'url(timeplot1.jpg)');
                     //Change image at regular intervals
       setInterval(function(){   
        image.fadeOut(0, function () {
-       //image.css('background-image', 'url(' + images [i++] +')');
+       image.css('background-image', 'url(' + images [i++] +')');
        image.fadeIn(0);
        });
        if(i == images.length)
